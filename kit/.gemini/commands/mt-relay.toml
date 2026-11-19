@@ -1,0 +1,6 @@
+description = "Run a bounded Gemini/Claude discussion and save the transcript"
+prompt = """
+Run `python3 .modeltalk/mt.py relay --as gemini "{{args}}"` from the repository root.
+It writes a transcript to docs/decisions/. Read it and report: the final position, the points
+still in dispute, and your own assessment of both.
+"""

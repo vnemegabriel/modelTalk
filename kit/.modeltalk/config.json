@@ -1,0 +1,13 @@
+{
+  "agents": {
+    "claude": { "cmd": ["claude", "-p", "{prompt}"], "timeout": 900 },
+    "gemini": { "cmd": ["gemini", "-p", "{prompt}"], "timeout": 900 }
+  },
+  "relay": { "max_turns": 6, "out_dir": "docs/decisions" },
+  "watch": {
+    "wake_on": ["question", "handoff", "blocked"],
+    "max_auto_replies_per_thread": 3,
+    "poll_seconds": 2
+  },
+  "log_body_limit": 8000
+}

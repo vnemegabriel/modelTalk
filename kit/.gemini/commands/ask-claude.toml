@@ -1,0 +1,12 @@
+description = "Ask Claude (via modelTalk) for a second opinion and weigh it"
+prompt = """
+Ask Claude the question below by running this shell command from the repository root:
+
+python3 .modeltalk/mt.py ask claude --as gemini "<question>"
+
+Question: {{args}}
+
+If the question concerns specific code, put file paths and line ranges in it: Claude runs in the
+same repository and can read them. Treat the reply as a second opinion: check each claim against
+the code, then report where you agree, where you disagree and why.
+"""
